@@ -1,7 +1,8 @@
 // @ts-check
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
-import '../pages/globals.css';
+import React from 'react';
+import '../styles/globals.css';
 
 // These match the Tailwind breakpoints (https://tailwindcss.com/docs/responsive-design)
 const BREAKPOINTS_INT = {
@@ -37,11 +38,7 @@ Object.defineProperty(NextImage, 'default', {
   value: (props) => <OriginalNextImage {...props} unoptimized />,
 });
 
-export const decorators = [
-  (Story) => (
-    <Story />
-  ),
-];
+export const decorators = [(Story) => <Story />];
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
