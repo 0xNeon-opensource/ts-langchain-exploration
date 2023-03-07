@@ -17,7 +17,7 @@ yarn storybook
 Run the command:
 
 ```bash
-yarn gen <ComponentName> --path=components/<existing subdirectory>
+yarn gen <ComponentName> --path=components/<subdirectory>
 ```
 
 For example, if we were to make a new button component, we could run:
