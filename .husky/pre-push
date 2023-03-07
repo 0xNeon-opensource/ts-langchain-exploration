@@ -7,6 +7,7 @@ else
   .husky/customScripts/check-for-git-updates.sh
 fi
 
-yarn lint
+yarn format
+yarn lint-staged
 yarn build
 # yarn test
