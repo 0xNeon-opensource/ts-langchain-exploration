@@ -54,7 +54,6 @@
     "eslint-plugin-storybook": "^0.6.11",
     "generate-react-cli": "^8.2.0",
     "husky": "^7.0.4",
-    "lint-staged": "^13.1.2",
     "next-auth": "^4.3.1",
     "onchange": "^7.1.0",
     "postcss": "^8.4.12",
@@ -67,10 +66,5 @@
   },
   "resolutions": {
     "webpack": "^5"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-      "prettier --write"
-    ]
   }
 }
