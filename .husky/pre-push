@@ -1,4 +1,12 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+if [ ! -x .husky/customScripts/check-for-git-updates.sh ]; then
+  echo "The script does not have execute permissions. Continuing with pre-push. If you want this check to happen, read the instructions in the readme."
+else
+  .husky/customScripts/check-for-git-updates.sh
+fi
+
+yarn lint
 yarn build
+yarn test

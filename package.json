@@ -1,7 +1,7 @@
 {
-  "name": "nextjs-fullstack-app-template",
+  "name": "nextjs-starter",
   "author": "YOUR_NAME_HERE",
-  "description": "A tutorial and template for creating a production-ready fullstack Next.js application",
+  "description": "A fullstack template for a NextJs App: TypeScript, Tailwind, Prettier, Husky hooks, and more",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
