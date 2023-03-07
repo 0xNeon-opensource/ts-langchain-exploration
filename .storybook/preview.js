@@ -2,7 +2,6 @@
 import { RouterContext } from 'next/dist/shared/lib/router-context';
 import * as NextImage from 'next/image';
 import '../pages/globals.css';
-import { AuthProvider } from '../state/auth/AuthContext';
 
 // These match the Tailwind breakpoints (https://tailwindcss.com/docs/responsive-design)
 const BREAKPOINTS_INT = {
@@ -40,9 +39,7 @@ Object.defineProperty(NextImage, 'default', {
 
 export const decorators = [
   (Story) => (
-    <AuthProvider>
-      <Story />
-    </AuthProvider>
+    <Story />
   ),
 ];
 
