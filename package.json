@@ -13,11 +13,12 @@
   },
   "scripts": {
     "dev:only": "next dev",
-    "dev": "concurrently --restart-tries 10 --raw \"yarn:dev:only\" \"yarn:lint:fix:watch\"",
+    "dev": "concurrently --restart-tries 10 --raw \"yarn:dev:only\" \"yarn:format:watch\"",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "format": "yarn pretty-quick",
+    "format:watch": "sh scripts/format-and-lint-on-change.sh",
     "prettier": "prettier --write .",
     "prepare": "husky install",
     "storybook": "start-storybook -p 6006",
