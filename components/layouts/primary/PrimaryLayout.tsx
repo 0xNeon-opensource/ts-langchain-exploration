@@ -1,3 +1,4 @@
+import classNames from 'lib/styles/classNames';
 import Head from 'next/head';
 
 export interface IPrimaryLayout extends React.ComponentPropsWithoutRef<'div'> {
@@ -14,8 +15,14 @@ const PrimaryLayout: React.FC<IPrimaryLayout> = ({
       <Head>
         <title>🪷</title>
       </Head>
-      <div {...divProps} className={`min-h-screen flex flex-col ${justify}`}>
-        <main className="px-5">{children}</main>
+      <div
+        {...divProps}
+        className={classNames(
+          'min-h-screen flex flex-col bg-slate-200 dark:bg-slate-800 dark:text-white',
+          justify
+        )}
+      >
+        <main>{children}</main>
       </div>
     </>
   );
