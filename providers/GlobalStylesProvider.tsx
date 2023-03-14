@@ -1,4 +1,4 @@
-import { Open_Sans } from '@next/font/google';
+import { Open_Sans } from "next/font/google";
 import classNames from 'lib/styles/classNames';
 
 export interface GlobalStylesProviderProps
