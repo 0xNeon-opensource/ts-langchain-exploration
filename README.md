@@ -1,4 +1,4 @@
-# gen-art
+# nextjs-starter-solo-project
 
 ## How to generate new pages
 
