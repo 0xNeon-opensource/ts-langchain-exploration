@@ -1,5 +1,5 @@
 import classNames from 'lib/styles/classNames';
-import Head from 'next/head';
+import { useState } from 'react';
 
 export interface IGalleryLayout extends React.ComponentPropsWithoutRef<'div'> {
   justify?: 'items-center' | 'items-start';
@@ -10,20 +10,22 @@ const GalleryLayout: React.FC<IGalleryLayout> = ({
   justify = 'items-center',
   ...divProps
 }) => {
+  const [selectedChildIndex, setSelectedChildIndex] = useState(0);
+  const numViews = 5;
+  const childrenList = [...Array(numViews)].map(() => {
+    return children;
+  });
+  console.log('childrenList :>> ', childrenList);
   return (
     <>
-      <Head>
-        <title>🪷</title>
-      </Head>
       <div
         {...divProps}
         className={classNames('min-h-screen w-screen flex flex-col', justify)}
       >
         <main>
-          <div>{children}</div>
-          <div>{children}</div>
-          <div>{children}</div>
-          <div>{children}</div>
+          {childrenList.map((child) => {
+            return child;
+          })}
         </main>
       </div>
     </>
