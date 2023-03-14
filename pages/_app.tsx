@@ -1,4 +1,4 @@
-import PrimaryLayout from 'components/layouts/primary/PrimaryLayout';
+import PrimaryLayout from 'components/layouts/PrimaryLayout';
 import { ThemeProvider } from 'next-theme';
 import type { AppProps } from 'next/app';
 import GlobalStylesProvider from 'providers/GlobalStylesProvider';
@@ -11,13 +11,12 @@ interface AppPropsWithLayout extends AppProps {
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
-  const getLayout =
-    Component.getLayout || ((page) => <PrimaryLayout>{page}</PrimaryLayout>);
+  const getLayout = Component.getLayout || ((page) => page);
 
   return (
     <ThemeProvider>
       <GlobalStylesProvider>
-        {getLayout(<Component {...pageProps} />)}
+        <PrimaryLayout>{getLayout(<Component {...pageProps} />)}</PrimaryLayout>
       </GlobalStylesProvider>
     </ThemeProvider>
   );

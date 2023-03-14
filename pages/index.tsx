@@ -1,5 +1,5 @@
 import TableOfContents from 'components/tableOfContents';
-import PrimaryLayout from '../components/layouts/primary/PrimaryLayout';
+import PrimaryLayout from '../components/layouts/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {

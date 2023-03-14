@@ -1,6 +1,7 @@
-import React from 'react';
+import GalleryLayout from 'components/layouts/GalleryLayout';
+import { NextPageWithLayout } from './page';
 
-const FadedCircle: React.FC = () => {
+const FadedCircle: NextPageWithLayout = () => {
   const colors = [
     '#FF3F8E',
     '#04C2C9',
@@ -47,3 +48,7 @@ const FadedCircle: React.FC = () => {
 };
 
 export default FadedCircle;
+
+FadedCircle.getLayout = (page) => {
+  return <GalleryLayout>{page}</GalleryLayout>;
+};

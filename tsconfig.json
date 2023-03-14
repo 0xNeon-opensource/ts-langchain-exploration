@@ -16,7 +16,8 @@
     "incremental": true,
     "baseUrl": ".",
     "paths": {
-      "_images/*": ["./public/assets/images/*"]
+      "_images/*": ["./public/assets/images/*"],
+      "_pages/*": ["./pages/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
