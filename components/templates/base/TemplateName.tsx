@@ -1,6 +1,4 @@
-export interface TemplateNameProps {}
-
-const TemplateName: React.FC<TemplateNameProps> = () => {
+const TemplateName: React.FC = () => {
   return <div>TemplateName works!</div>;
 };
 

@@ -22,7 +22,7 @@
     "format": "yarn pretty-quick",
     "format:watch": "sh scripts/format-and-lint-on-change.sh",
     "prettier": "prettier --write .",
-    "gen": "npx generate-react-cli component"
+    "gen": "npx generate-react-cli component --flat"
   },
   "dependencies": {
     "next": "^13.2.3",
