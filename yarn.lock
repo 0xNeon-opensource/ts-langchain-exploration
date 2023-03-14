@@ -830,6 +830,11 @@
   dependencies:
     glob "7.1.7"
 
+"@next/font@^13.2.4":
+  version "13.2.4"
+  resolved "https://registry.yarnpkg.com/@next/font/-/font-13.2.4.tgz#c8c2249e11338d2e04f3b721a62c560358de0e70"
+  integrity sha512-lMAnuOYjv5g22WhD00u0DQ9u2rTMJH0S64PKE4Sy8Y2q+FJTYs6ZHT2z3VRoI8+AOWSLK4FirpnygcjOienQ9A==
+
 "@next/swc-android-arm-eabi@13.2.3":
   version "13.2.3"
   resolved "https://registry.yarnpkg.com/@next/swc-android-arm-eabi/-/swc-android-arm-eabi-13.2.3.tgz#85eed560c87c7996558c868a117be9780778f192"
@@ -4401,6 +4406,11 @@ next-auth@^4.3.1:
     preact "^10.6.3"
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
+
+next-theme@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/next-theme/-/next-theme-0.1.5.tgz#aa6655c516892925e577349d7715a8ed54bad727"
+  integrity sha512-WR8UCLEFjWvRl+UO2lTM4pGo7R4jzGZqQ6YL3hiL1Ns587Qb91GhJZLPu/Aa4ExtGQ/5wlcDX8zDYZoCN9oDPw==
 
 next@^13.2.3:
   version "13.2.3"
