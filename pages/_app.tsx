@@ -1,7 +1,6 @@
 import PrimaryLayout from 'components/layouts/PrimaryLayout';
 import { ThemeProvider } from 'next-theme';
 import type { AppProps } from 'next/app';
-import GlobalStylesProvider from 'providers/GlobalStylesProvider';
 import 'styles/globals.css';
 import { NextPageWithLayout } from './page';
 
@@ -15,9 +14,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <ThemeProvider>
-      <GlobalStylesProvider>
-        <PrimaryLayout>{getLayout(<Component {...pageProps} />)}</PrimaryLayout>
-      </GlobalStylesProvider>
+      <PrimaryLayout>{getLayout(<Component {...pageProps} />)}</PrimaryLayout>
     </ThemeProvider>
   );
 }
