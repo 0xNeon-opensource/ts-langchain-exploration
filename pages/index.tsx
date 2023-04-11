@@ -3,6 +3,7 @@ import MultipleMessages from 'components/ChatModels/1_MultipleMessages';
 import MultipleCompletions from 'components/ChatModels/2_MultipleCompletions';
 import ChatPromptTemplates from 'components/ChatModels/3_ChatPromptTemplates';
 import LLMChainComponent from 'components/ChatModels/4_ModelPlusPromptEqualsLlmChain';
+import AgentsComponent from 'components/ChatModels/5_Agents';
 import HelloLangChain from 'components/LLMs/0_HelloLangChain';
 import PromptTemplates from 'components/LLMs/1_PromptTemplates';
 import ChainedPromptTemplates from 'components/LLMs/2_ChainedPromptTemplates';
@@ -35,6 +36,7 @@ const Home: NextPageWithLayout = () => {
             <MultipleCompletions />
             <ChatPromptTemplates />
             <LLMChainComponent />
+            <AgentsComponent />
           </>
         }
       />
