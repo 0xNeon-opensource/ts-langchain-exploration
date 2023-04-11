@@ -1,6 +1,7 @@
 import QuickstartChatModels from 'components/ChatModels/0_QuickstartChatModels';
 import MultipleMessages from 'components/ChatModels/1_MultipleMessages';
 import MultipleCompletions from 'components/ChatModels/2_MultipleCompletions';
+import ChatPromptTemplates from 'components/ChatModels/3_ChatPromptTemplates';
 import HelloLangChain from 'components/LLMs/0_HelloLangChain';
 import PromptTemplates from 'components/LLMs/1_PromptTemplates';
 import ChainedPromptTemplates from 'components/LLMs/2_ChainedPromptTemplates';
@@ -31,6 +32,7 @@ const Home: NextPageWithLayout = () => {
             <QuickstartChatModels />
             <MultipleMessages />
             <MultipleCompletions />
+            <ChatPromptTemplates />
           </>
         }
       />
