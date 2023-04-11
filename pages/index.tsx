@@ -1,5 +1,6 @@
 import HelloLangChain from 'components/0_HelloLangChain';
 import PromptTemplates from 'components/1_PromptTemplates';
+import ChainedPromptTemplates from 'components/2_ChainedPromptTemplates';
 import PrimaryLayout from '../components/layouts/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
@@ -9,6 +10,7 @@ const Home: NextPageWithLayout = () => {
       Welcome to NΞ◎N&apos;s NextJS Starter repo!
       <HelloLangChain />
       <PromptTemplates />
+      <ChainedPromptTemplates />
     </section>
   );
 };
