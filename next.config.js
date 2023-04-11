@@ -9,6 +9,14 @@ const nextConfig = {
     defaultLocale: 'en',
     // localeDetection: false,
   },
+  webpack(config) {
+    config.experiments = {
+      asyncWebAssembly: true,
+      layers: true,
+    };
+
+    return config;
+  },
 };
 
 module.exports = nextConfig;
