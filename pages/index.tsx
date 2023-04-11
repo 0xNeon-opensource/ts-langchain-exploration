@@ -2,6 +2,7 @@ import QuickstartChatModels from 'components/ChatModels/0_QuickstartChatModels';
 import MultipleMessages from 'components/ChatModels/1_MultipleMessages';
 import MultipleCompletions from 'components/ChatModels/2_MultipleCompletions';
 import ChatPromptTemplates from 'components/ChatModels/3_ChatPromptTemplates';
+import LLMChainComponent from 'components/ChatModels/4_ModelPlusPromptEqualsLlmChain';
 import HelloLangChain from 'components/LLMs/0_HelloLangChain';
 import PromptTemplates from 'components/LLMs/1_PromptTemplates';
 import ChainedPromptTemplates from 'components/LLMs/2_ChainedPromptTemplates';
@@ -13,7 +14,7 @@ import { NextPageWithLayout } from './page';
 const Home: NextPageWithLayout = () => {
   return (
     <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
-      Welcome to NΞ◎N&apos;s NextJS Starter repo!
+      Welcome to NΞ◎N&apos;s TypeScript LangChain Explorations!
       <Expand
         title="LLMs"
         content={
@@ -33,6 +34,7 @@ const Home: NextPageWithLayout = () => {
             <MultipleMessages />
             <MultipleCompletions />
             <ChatPromptTemplates />
+            <LLMChainComponent />
           </>
         }
       />
