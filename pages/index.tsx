@@ -1,4 +1,5 @@
-import HelloLangChain from 'components/HelloLangChain';
+import HelloLangChain from 'components/0_HelloLangChain';
+import PromptTemplates from 'components/1_PromptTemplates';
 import PrimaryLayout from '../components/layouts/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
@@ -7,6 +8,7 @@ const Home: NextPageWithLayout = () => {
     <section className="flex flex-col items-center gap-y-5 mt-12 sm:mt-36">
       Welcome to NΞ◎N&apos;s NextJS Starter repo!
       <HelloLangChain />
+      <PromptTemplates />
     </section>
   );
 };

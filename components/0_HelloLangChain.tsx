@@ -21,7 +21,7 @@ const HelloLangChain: React.FC<HelloLangChainProps> = () => {
 
   return (
     <div className="border border-blue-400 p-2">
-      <h2>Hello, LangChain! 🦜⛓️</h2>
+      <h2>0. Hello, LangChain! 🦜⛓️</h2>
       <p>
         Prompt: <code>{prompt}</code>
       </p>
