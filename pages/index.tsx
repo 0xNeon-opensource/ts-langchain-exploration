@@ -5,12 +5,12 @@ import ChatPromptTemplates from 'components/ChatModels/3_ChatPromptTemplates';
 import LLMChainComponent from 'components/ChatModels/4_ModelPlusPromptEqualsLlmChain';
 import AgentsComponent from 'components/ChatModels/5_Agents';
 import MemoryComponent from 'components/ChatModels/6_Memory';
-import GitHubRepo from 'components/GitHubRepo/gitHubRepo';
 import HelloLangChain from 'components/LLMs/0_HelloLangChain';
 import PromptTemplates from 'components/LLMs/1_PromptTemplates';
 import ChainedPromptTemplates from 'components/LLMs/2_ChainedPromptTemplates';
 import AgentExample from 'components/LLMs/3_Agent';
 import Expand from 'components/LLMs/Expand';
+import GitHubRepo from 'components/Websites/gitHubRepo';
 import PrimaryLayout from '../components/layouts/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
@@ -44,7 +44,7 @@ const Home: NextPageWithLayout = () => {
         }
       />
       <Expand
-        title="GitHub Repo"
+        title="Websites"
         content={
           <>
             <GitHubRepo />
