@@ -10,7 +10,8 @@ import PromptTemplates from 'components/LLMs/1_PromptTemplates';
 import ChainedPromptTemplates from 'components/LLMs/2_ChainedPromptTemplates';
 import AgentExample from 'components/LLMs/3_Agent';
 import Expand from 'components/LLMs/Expand';
-import GitHubRepo from 'components/Websites/gitHubRepo';
+import GitHubRepo from 'components/Websites/GitHubRepo';
+import WebPage from 'components/Websites/WebPage';
 import PrimaryLayout from '../components/layouts/PrimaryLayout';
 import { NextPageWithLayout } from './page';
 
@@ -48,6 +49,7 @@ const Home: NextPageWithLayout = () => {
         content={
           <>
             <GitHubRepo />
+            <WebPage />
           </>
         }
       />

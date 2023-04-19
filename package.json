@@ -25,6 +25,7 @@
     "gen": "npx generate-react-cli component --flat"
   },
   "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
     "langchain": "^0.0.52",
     "next": "^13.2.3",
     "next-theme": "^0.1.5",
